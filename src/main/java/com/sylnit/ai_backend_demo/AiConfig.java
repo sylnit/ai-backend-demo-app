@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class AiConfig {
     @Bean
     public ChatClient chatClient(ChatClient.Builder builder){
-        return builder.defaultSystem("You are a helpful Java assistant")
+        return builder.defaultSystem("You are an AI assistant that helps customers to answer questions about their customer details, past transactions. You must provide the amounts in Naira")
                 .build();
     }
 }
