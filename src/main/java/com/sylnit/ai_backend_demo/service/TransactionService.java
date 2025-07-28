@@ -15,7 +15,6 @@ public class TransactionService {
     private TransactionRepository transactionRepository;
 
     public List<Transaction> getLast5(Customer customer){
-//        return transactionRepository.getLast5Records(customer.getId());
         return transactionRepository.findTop5ByCustomer_IdOrderByCreatedAtDesc(customer.getId());
     }
 }

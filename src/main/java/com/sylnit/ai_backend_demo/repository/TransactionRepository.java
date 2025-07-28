@@ -12,8 +12,5 @@ import java.util.UUID;
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, UUID> {
-
-//    @Query(value = "SELECT t from Transaction t where t.customer_id = :customerId ORDER BY t.createdAt DESC LIMIT 5")
-//    List<Transaction> getLast5Records(@Param("customerId") UUID customerId);
     List<Transaction> findTop5ByCustomer_IdOrderByCreatedAtDesc(UUID customerId);
 }
