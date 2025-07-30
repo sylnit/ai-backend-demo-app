@@ -1,4 +1,5 @@
 # AI Backend Demo App
+This application is a Backend AI app written in Spring Boot that shows the capability for function calling in LLM powered apps. Function calling is one of the ways organizations can make an AI model to use their data in responding to user chats. This backend app uses a locally hosted model (qwen3:1.7b) that runs off ollama. However, any open source LLM model can be used as long as the resources to host the model are available on the users' computer.
 
 ## Prerequisites
 This application requires an open source AI model to be hosted locally. Don't worry about it, you can get low power and memory models for test running the app. 
